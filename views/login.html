@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Proyecto Proveedores</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">  
+
+  <!-- Aplicar el tema lo antes posible -->
+  <script>
+    (function() {
+      let currentTheme = localStorage.getItem('theme') || 'css/claro.css';
+      document.write('<link id="themeStylesheet" rel="stylesheet" href="' + currentTheme + '">');
+    })();
+  </script>
+  
+</head>
+<body>
+  <div id="loginContenedor">
+      <div class="shape"></div>
+      <div class="shape"></div>
+  </div>
+  <form id="loginForm">
+      <h3>Bienvenido</h3>
+      <label id="labelLogin" for="username">Usuario</label>
+      <input type="text" id="usuario" placeholder="Ingresa tu Usuario">
+      <label id="labelLogin"  for="password">Contraseña</label>
+      <input type="password" id="contraseña" placeholder="Ingresa tu Contraseña">
+      <button type="submit" id="ingresar">Ingresar</button>
+  </form>  
+  
+  <button id="buttonTheme" class="btn btn-primary">
+    <span class="tooltiptext"></span>
+  </button>
+
+</body>
+<script src="../node_modules/sweetalert2/dist/sweetalert2.all.min.js"></script>
+<script src="js/login.js"></script>
+</html>
